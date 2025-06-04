@@ -1,0 +1,97 @@
+body {
+    background-image: url('chillguy.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  margin: 2rem auto;  /* spacing between containers */
+  max-width: 800px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px);
+}
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* Optional: for vertical alignment */
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.video-wrapper iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.transcript {
+    display: block;
+    visibility: visible;
+    margin-top: 10px;
+    color: #333;
+    font-style: italic;
+}
+
+.entry-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+p {
+  text-indent: 2em; 
+  margin-bottom: 1rem; 
+  line-height: 1.6;
+}
+
+
+blockquote {
+    border-left: 4px solid rgba(0, 0, 0, 0.2);
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+ 
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    blockquote {
+        padding: 0.75rem;
+        margin: 1rem 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0.75rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    blockquote {
+        padding: 0.5rem;
+    }
+}
